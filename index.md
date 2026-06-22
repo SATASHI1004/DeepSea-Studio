@@ -1,0 +1,64 @@
+---
+layout: home
+title: "深海工作室 DeepSea Studio"
+header:
+  overlay_color: "#1a1a2e"
+  overlay_filter: "0.3"
+  actions:
+    - label: "🎨 委託資訊"
+      url: "commissions"
+    - label: "💼 商業合作"
+      url: "business"
+    - label: "🔞 R18 委託"
+      url: "r18"
+---
+
+## 歡迎來到 奧蘿拉 的委託頁面 🐳
+
+這裡記錄了我的作品集、委託規範與價目資訊 🐙
+
+在下單前，請務必詳閱「委託須知」，謝謝你的耐心 ✨
+
+---
+
+## ✦ 委託類型
+
+| | 類型 | 說明 | 連結 |
+|---|---|---|---|
+| 🎨 | **私人委託** | 個人收藏用途，全年齡 | [查看詳情](commissions) |
+| 💼 | **商業合作** | 品牌合作、商品授權 | [聯繫我們](business) |
+| 🔞 | **R18 委託** | 成人向委託 | [前往頁面](r18) |
+
+---
+
+## ✦ 作品展示
+
+> 🖼️ 想看更多作品？前往 [作品集](gallery)
+
+<!-- 之後在這裡放優姆的精選作品圖片 -->
+<!-- 範例：
+![作品名稱](assets/images/sample1.jpg)
+![作品名稱](assets/images/sample2.jpg)
+-->
+
+---
+
+## ✦ 委託進度
+
+想知道你的委託到哪了？查看 [📊 排隊看板](queue)
+
+---
+
+## ✦ 聯絡方式
+
+| 平台 | 連結 |
+|------|------|
+| ✉ Email | `待填入` |
+| 🐦 Twitter / X | `待填入` |
+| 🎨 Pixiv | `待填入` |
+| 📷 Instagram | `待填入` |
+| 📘 Facebook | `待填入` |
+
+---
+
+<small>© 2026 深海工作室 DeepSea Studio. All rights reserved.</small>
