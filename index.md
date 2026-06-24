@@ -23,8 +23,8 @@ title: "深海工作室 DeepSea Studio"
 
 <div class="hero-gallery">
   <img src="assets/images/showcase-1.jpg" alt="精選作品 1">
-  <img src="assets/images/showcase-2.jpg" alt="精選作品 2">
-  <img src="assets/images/showcase-3.jpg" alt="精選作品 3">
+  <img src="assets/images/showcase-2.png" alt="精選作品 2">
+  <img src="assets/images/showcase-3.png" alt="精選作品 3">
 </div>
 
 > 🖼️ 想看更多作品？前往 [作品集](gallery)
