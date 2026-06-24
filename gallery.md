@@ -10,30 +10,57 @@ permalink: /gallery/
 
 ## 🌸 明亮可愛
 
-<!-- 放圖片範例：
-![作品標題](assets/images/gallery/cute-01.jpg)
-![作品標題](assets/images/gallery/cute-02.jpg)
--->
-
-*作品陸續上傳中...*
+<div class="gallery-grid">
+  <img src="../assets/images/繪圖/D4DE459A-45DF-4031-9313-8F5CFB1747DE.jpg" alt="YUMA 優姆自畫像">
+  <img src="../assets/images/繪圖/IMG_2180.PNG" alt="魔法少女">
+  <img src="../assets/images/繪圖/IMG_2184.PNG" alt="魔法少女特寫">
+  <img src="../assets/images/繪圖/IMG_0324.JPG" alt="金髮獸耳啦啦隊">
+  <img src="../assets/images/繪圖/IMG_1732.PNG" alt="粉髮天使">
+  <img src="../assets/images/繪圖/IMG_2466.PNG" alt="彩虹髮獸耳角色">
+  <img src="../assets/images/繪圖/IMG_2335.PNG" alt="水伊布同人">
+  <img src="../assets/images/繪圖/IMG_2336.PNG" alt="長毛仙子擬人">
+</div>
 
 ---
 
 ## 🌑 暗黑帥氣
 
-*作品陸續上傳中...*
+<div class="gallery-grid">
+  <img src="../assets/images/繪圖/IMG_1796.PNG" alt="翼族角色">
+  <img src="../assets/images/繪圖/IMG_1277.PNG" alt="異色瞳角色">
+  <img src="../assets/images/繪圖/IMG_2500.PNG" alt="紅色怪物紳士">
+  <img src="../assets/images/繪圖/IMG_2035.PNG" alt="兔耳角色">
+  <img src="../assets/images/繪圖/IMG_2567.PNG" alt="人魚角色">
+</div>
 
 ---
 
 ## 🍡 Q 版
 
-*作品陸續上傳中...*
+<div class="gallery-grid">
+  <img src="../assets/images/繪圖/IMG_0178.JPG" alt="粉色貓娘 Q版">
+  <img src="../assets/images/繪圖/IMG_0189.PNG" alt="粉色角色 Q版">
+  <img src="../assets/images/繪圖/IMG_0194.PNG" alt="Q版 兔女郎">
+  <img src="../assets/images/繪圖/IMG_0195.PNG" alt="Q版 小狗裝">
+  <img src="../assets/images/繪圖/IMG_0196.PNG" alt="Q版 新娘裝">
+  <img src="../assets/images/繪圖/IMG_0345.JPG" alt="青綠頭髮角色頭像">
+  <img src="../assets/images/繪圖/IMG_1744.PNG" alt="三人 Q版頭像組合">
+  <img src="../assets/images/繪圖/IMG_1750.PNG" alt="白髮惡魔 Q版頭像">
+  <img src="../assets/images/繪圖/IMG_1752.PNG" alt="粉髮丸子頭 Q版頭像">
+  <img src="../assets/images/繪圖/IMG_1753.PNG" alt="金髮獸耳 Q版頭像">
+</div>
 
 ---
 
 ## 🌌 奇幻氛圍
 
-*作品陸續上傳中...*
+<div class="gallery-grid">
+  <img src="../assets/images/繪圖/IMG_0951.PNG" alt="海洋鳥羽少女">
+  <img src="../assets/images/繪圖/IMG_1200.PNG" alt="綠髮鈴鐺角色">
+  <img src="../assets/images/繪圖/IMG_1733.PNG" alt="新年和服角色">
+  <img src="../assets/images/繪圖/IMG_2217.PNG" alt="眼鏡角色與骷髏">
+  <img src="../assets/images/繪圖/IMG_2518.PNG" alt="雙人金冠構圖">
+</div>
 
 ---
 

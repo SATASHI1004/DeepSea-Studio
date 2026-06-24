@@ -49,7 +49,7 @@ permalink: /commissions/
 
 ### 🌸 明亮可愛
 
-<!-- ![明亮可愛風格範例](../assets/images/style-cute.jpg) -->
+<img class="style-preview" src="../assets/images/繪圖/IMG_2180.PNG" alt="明亮可愛風格範例">
 
 | 規格 | 價格（NT$） |
 |------|------------|
@@ -61,7 +61,7 @@ permalink: /commissions/
 
 ### 🌑 暗黑帥氣
 
-<!-- ![暗黑帥氣風格範例](../assets/images/style-dark.jpg) -->
+<img class="style-preview" src="../assets/images/繪圖/IMG_1796.PNG" alt="暗黑帥氣風格範例">
 
 | 規格 | 價格（NT$） |
 |------|------------|
@@ -73,7 +73,7 @@ permalink: /commissions/
 
 ### 🍡 Q 版
 
-<!-- ![Q 版風格範例](../assets/images/style-chibi.jpg) -->
+<img class="style-preview" src="../assets/images/繪圖/IMG_1744.PNG" alt="Q版風格範例">
 
 | 規格 | 價格（NT$） |
 |------|------------|
@@ -85,7 +85,7 @@ permalink: /commissions/
 
 ### 🌌 奇幻氛圍
 
-<!-- ![奇幻氛圍風格範例](../assets/images/style-fantasy.jpg) -->
+<img class="style-preview" src="../assets/images/繪圖/IMG_0951.PNG" alt="奇幻氛圍風格範例">
 
 | 規格 | 價格（NT$） |
 |------|------------|

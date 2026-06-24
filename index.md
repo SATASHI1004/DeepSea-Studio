@@ -22,9 +22,9 @@ title: "深海工作室 DeepSea Studio"
 ## ✦ 精選作品
 
 <div class="hero-gallery">
-  <img src="assets/images/showcase-1.jpg" alt="精選作品 1">
-  <img src="assets/images/showcase-2.png" alt="精選作品 2">
-  <img src="assets/images/showcase-3.png" alt="精選作品 3">
+  <img src="assets/images/繪圖/IMG_2180.PNG" alt="明亮可愛 — 魔法少女">
+  <img src="assets/images/繪圖/IMG_0951.PNG" alt="奇幻氛圍 — 海洋鳥羽少女">
+  <img src="assets/images/繪圖/IMG_1796.PNG" alt="暗黑帥氣 — 翼族角色">
 </div>
 
 > 🖼️ 想看更多作品？前往 [作品集](gallery)
