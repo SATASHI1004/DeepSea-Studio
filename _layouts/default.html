@@ -8,41 +8,48 @@
 </head>
 <body>
 
-  <!-- 左側固定圖片 -->
-  <div class="side-panel side-left">
-    <img src="{{ '/assets/images/side-left-1.PNG' | relative_url }}" alt="">
-    <img src="{{ '/assets/images/side-left-2.PNG' | relative_url }}" alt="">
-  </div>
+  <!-- 三欄式版面 -->
+  <div class="page-layout">
 
-  <!-- 右側固定圖片 -->
-  <div class="side-panel side-right">
-    <img src="{{ '/assets/images/side-right-1.PNG' | relative_url }}" alt="">
-    <img src="{{ '/assets/images/side-right-2.PNG' | relative_url }}" alt="">
-  </div>
-
-  <!-- 主內容區 -->
-  <div class="site-wrapper">
-
-    <!-- 橫幅圖片 -->
-    <div class="banner-image">
-      <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="深海工作室 Banner">
+    <!-- 左側圖片欄 -->
+    <div class="side-column side-left">
+      <div class="side-sticky">
+        <img src="{{ '/assets/images/side-left-1.PNG' | relative_url }}" alt="">
+      </div>
     </div>
 
-    <!-- 標題區 -->
-    <header class="site-header">
-      <h1>{{ site.title }}</h1>
-      <p class="tagline">{{ site.description }}</p>
-    </header>
+    <!-- 主內容區 -->
+    <div class="site-wrapper">
 
-    <!-- 頁面內容 -->
-    <main class="site-content">
-      {{ content }}
-    </main>
+      <!-- 橫幅圖片 -->
+      <div class="banner-image">
+        <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="深海工作室 Banner">
+      </div>
 
-    <!-- 自訂頁尾 -->
-    <footer class="site-footer">
-      <p>© 2026 深海工作室 DeepSea Studio. All rights reserved.</p>
-    </footer>
+      <!-- 標題區 -->
+      <header class="site-header">
+        <h1>{{ site.title }}</h1>
+        <p class="tagline">{{ site.description }}</p>
+      </header>
+
+      <!-- 頁面內容 -->
+      <main class="site-content">
+        {{ content }}
+      </main>
+
+      <!-- 自訂頁尾 -->
+      <footer class="site-footer">
+        <p>© 2026 深海工作室 DeepSea Studio. All rights reserved.</p>
+      </footer>
+
+    </div>
+
+    <!-- 右側圖片欄 -->
+    <div class="side-column side-right">
+      <div class="side-sticky">
+        <img src="{{ '/assets/images/side-right-1.PNG' | relative_url }}" alt="">
+      </div>
+    </div>
 
   </div>
 

@@ -71,41 +71,35 @@ a#forkme_banner {
   border-radius: 8px;
 }
 
-/* ===== 兩側固定圖片 ===== */
+/* ===== 三欄式版面 ===== */
 
-.side-panel {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
+.page-layout {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.side-left {
-  left: 10px;
+/* 側邊圖片欄 */
+.side-column {
+  width: 220px;
+  flex-shrink: 0;
 }
 
-.side-right {
-  right: 10px;
+.side-sticky {
+  position: sticky;
+  top: 0;
 }
 
-.side-panel img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-  opacity: 0.85;
-  transition: opacity 0.3s;
-}
-
-.side-panel img:hover {
-  opacity: 1;
+.side-sticky img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
 }
 
 /* 螢幕太窄時隱藏兩側圖片 */
 @media (max-width: 1300px) {
-  .side-panel {
+  .side-column {
     display: none;
   }
 }
