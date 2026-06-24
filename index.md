@@ -70,5 +70,3 @@ title: "深海工作室 DeepSea Studio"
 | 📘 Facebook | `待填入` |
 
 ---
-
-<small>© 2026 深海工作室 DeepSea Studio. All rights reserved.</small>
