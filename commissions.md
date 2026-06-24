@@ -100,8 +100,7 @@ permalink: /commissions/
 
 準備好了嗎？請填寫委託表單 ⬇️
 
-<!-- 之後替換成實際的 Google Form 連結 -->
-> 🔗 [點此填寫委託表單](#)
+> 🔗 [點此填寫委託表單](https://docs.google.com/forms/d/e/1FAIpQLSdSa36nUXHejy16MdDexFvZWuhbNKiN-fWn2mlIFYTktIr8Zw/viewform)
 
 ---
 
