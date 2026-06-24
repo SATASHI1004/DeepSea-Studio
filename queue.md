@@ -1,11 +1,10 @@
 ---
-layout: single
+layout: default
 title: "📊 排隊看板"
 permalink: /queue/
 ---
 
 > 最後更新：2026-06-22
-{: .notice}
 
 ---
 

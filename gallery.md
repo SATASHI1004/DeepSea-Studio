@@ -1,11 +1,10 @@
 ---
-layout: single
+layout: default
 title: "🖼️ 作品集"
 permalink: /gallery/
 ---
 
 > 這裡展示的都是全年齡作品。R18 作品請前往 [Pixiv](#)。
-{: .notice--info}
 
 ---
 

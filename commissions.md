@@ -1,14 +1,10 @@
 ---
-layout: single
+layout: default
 title: "🎨 私人委託 — 全年齡"
 permalink: /commissions/
-toc: true
-toc_label: "目錄"
-toc_sticky: true
 ---
 
 > 委託狀態：🟢 **開放中**
-{: .notice--success}
 
 ---
 
@@ -115,7 +111,7 @@ toc_sticky: true
 準備好了嗎？請填寫委託表單 ⬇️
 
 <!-- 之後替換成實際的 Google Form 連結 -->
-> 🔗 [點此填寫委託表單](#){: .btn .btn--primary .btn--large}
+> 🔗 [點此填寫委託表單](#)
 
 ---
 

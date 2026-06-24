@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 title: "💼 商業合作"
 permalink: /business/
 ---
@@ -16,7 +16,6 @@ permalink: /business/
 ## 📧 聯繫方式
 
 > ✉ Email：`待填入`
-{: .notice--info}
 
 ---
 

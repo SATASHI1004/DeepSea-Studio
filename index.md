@@ -1,16 +1,6 @@
 ---
-layout: home
+layout: default
 title: "深海工作室 DeepSea Studio"
-header:
-  overlay_color: "#1a1a2e"
-  overlay_filter: "0.3"
-  actions:
-    - label: "🎨 委託資訊"
-      url: "commissions"
-    - label: "💼 商業合作"
-      url: "business"
-    - label: "🔞 R18 委託"
-      url: "r18"
 ---
 
 ## 歡迎來到 奧蘿拉 的委託頁面 🐳

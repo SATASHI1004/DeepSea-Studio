@@ -4,53 +4,13 @@ description: "奧蘿拉的繪圖委託頁面 ✨"
 baseurl: "/DeepSea-Studio"
 url: "https://SATASHI1004.github.io"
 
-# 主題設定（使用 Minimal Mistakes，支援圖片 Gallery）
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+# 主題（GitHub Pages 原生支援的暗色主題）
+theme: jekyll-theme-midnight
 
-# 外掛
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-
-# 網站預設設定
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "single"
-
-# 導航列
+# 導航頁面
 header_pages:
   - commissions.md
   - business.md
   - r18.md
   - gallery.md
   - queue.md
-
-# Minimal Mistakes 主題設定
-minimal_mistakes_skin: "dark"  # 深色主題，呼應「深海」
-
-# 作者資訊（顯示在側邊欄）
-author:
-  name: "奧蘿拉"
-  bio: "繪師 ✦ 委託開放中"
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "#"  # 待填入
-    - label: "Pixiv"
-      icon: "fas fa-fw fa-paint-brush"
-      url: "#"  # 待填入
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "#"  # 待填入
-
-# 頁尾
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "#"
-    - label: "Pixiv"
-      icon: "fas fa-fw fa-paint-brush"
-      url: "#"
