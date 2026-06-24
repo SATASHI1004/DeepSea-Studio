@@ -6,13 +6,23 @@
 /* ===== 隱藏 GitHub 預設元素 ===== */
 
 /* 隱藏 View on GitHub 按鈕 */
-a.btn {
+#header_wrap .btn,
+#header_wrap a.btn,
+a.button,
+.inner > a.button {
   display: none !important;
 }
 
-/* 隱藏底部的 GitHub 資訊 */
-footer .owner,
-footer .creds {
+/* 隱藏 "Project maintained by" 和 "Theme by" */
+#banner .downloads,
+#banner span,
+#header_wrap .credits,
+#footer_wrap .inner {
+  display: none !important;
+}
+
+/* 隱藏整個預設 footer */
+#footer_wrap {
   display: none !important;
 }
 
