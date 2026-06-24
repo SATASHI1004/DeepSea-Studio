@@ -30,7 +30,6 @@ permalink: /gallery/
   <img src="../assets/images/繪圖/IMG_1277.PNG" alt="異色瞳角色">
   <img src="../assets/images/繪圖/IMG_2500.PNG" alt="紅色怪物紳士">
   <img src="../assets/images/繪圖/IMG_2035.PNG" alt="兔耳角色">
-  <img src="../assets/images/繪圖/IMG_2567.PNG" alt="人魚角色">
 </div>
 
 ---
