@@ -8,19 +8,17 @@
 </head>
 <body>
 
-  <!-- 左側固定圖片 -->
+  <!-- 左側圖片（固定，滿版高度） -->
   <div class="side-panel side-left">
     <img src="{{ '/assets/images/side-left-1.PNG' | relative_url }}" alt="">
-    <img src="{{ '/assets/images/side-left-2.PNG' | relative_url }}" alt="">
   </div>
 
-  <!-- 右側固定圖片 -->
+  <!-- 右側圖片（固定，滿版高度） -->
   <div class="side-panel side-right">
     <img src="{{ '/assets/images/side-right-1.PNG' | relative_url }}" alt="">
-    <img src="{{ '/assets/images/side-right-2.PNG' | relative_url }}" alt="">
   </div>
 
-  <!-- 橫幅圖片（全螢幕寬度） -->
+  <!-- 橫幅圖片 -->
   <div class="banner-image">
     <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="深海工作室 Banner">
   </div>
@@ -28,18 +26,15 @@
   <!-- 主內容區 -->
   <div class="site-wrapper">
 
-    <!-- 標題區 -->
     <header class="site-header">
       <h1>{{ site.title }}</h1>
       <p class="tagline">{{ site.description }}</p>
     </header>
 
-    <!-- 頁面內容 -->
     <main class="site-content">
       {{ content }}
     </main>
 
-    <!-- 自訂頁尾 -->
     <footer class="site-footer">
       <p>© 2026 深海工作室 DeepSea Studio. All rights reserved.</p>
     </footer>
