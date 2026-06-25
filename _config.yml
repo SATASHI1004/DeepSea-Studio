@@ -7,6 +7,10 @@ url: "https://SATASHI1004.github.io"
 # 主題（GitHub Pages 原生支援的暗色主題）
 theme: jekyll-theme-midnight
 
+# 插件
+plugins:
+  - jekyll-sitemap
+
 # 導航頁面
 header_pages:
   - commissions.md

@@ -22,6 +22,26 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== 頁面載入淡入動畫 ===== */
+
+.site-wrapper {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.banner-image {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* ===== 兩側固定圖片（各一張，滿版高度） ===== */
 
 .side-panel {
@@ -111,6 +131,24 @@ body {
   font-size: 0.85em;
   border-top: 1px solid #333;
   margin-top: 40px;
+}
+
+.footer-social {
+  margin-bottom: 12px;
+}
+
+.footer-social .social-link {
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 0 10px;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-social .social-link:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 /* ===== 導航列 ===== */
@@ -423,4 +461,86 @@ table th {
   .site-content {
     padding: 16px;
   }
+}
+
+/* ===== 排隊看板 ===== */
+
+.queue-board {
+  margin: 16px 0 24px;
+}
+
+.queue-item {
+  background: #16162a;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+}
+
+.queue-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.queue-id {
+  font-weight: bold;
+  color: #e8e8e8;
+  font-size: 1.1em;
+}
+
+.queue-type {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.queue-status {
+  margin-left: auto;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.queue-status.done {
+  background: rgba(46, 160, 67, 0.2);
+  color: #2ea043;
+}
+
+.queue-status.wip {
+  background: rgba(255, 193, 7, 0.2);
+  color: #ffc107;
+}
+
+.queue-status.waiting {
+  background: rgba(150, 150, 170, 0.2);
+  color: #9696aa;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #2a2a4a;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ea043, #4ade80);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78em;
+  color: #666;
+}
+
+.progress-steps .step.active {
+  color: #2ea043;
 }

@@ -10,9 +10,27 @@ permalink: /queue/
 
 ## 委託進度
 
-| 編號 | 類型 | 進度 | 預估完成 |
-|------|------|------|---------|
-| #001 | 範例 | ✅ 完成 | — |
+<div class="queue-board">
+
+  <div class="queue-item">
+    <div class="queue-header">
+      <span class="queue-id">#001</span>
+      <span class="queue-type">範例</span>
+      <span class="queue-status done">✅ 完成</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 100%"></div>
+    </div>
+    <div class="progress-steps">
+      <span class="step active">⏳ 排隊</span>
+      <span class="step active">📝 草稿</span>
+      <span class="step active">✏️ 線稿</span>
+      <span class="step active">🎨 上色</span>
+      <span class="step active">✅ 完成</span>
+    </div>
+  </div>
+
+</div>
 
 ---
 
