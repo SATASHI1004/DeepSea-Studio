@@ -9,6 +9,7 @@ title: "深海工作室 DeepSea Studio"
   <a href="r18">🔞 R18</a>
   <a href="gallery">🖼️ 作品集</a>
   <a href="queue">📊 排隊看板</a>
+  <a href="faq">❓ FAQ</a>
 </nav>
 
 ## 歡迎來到 奧蘿拉 的委託頁面 🐳

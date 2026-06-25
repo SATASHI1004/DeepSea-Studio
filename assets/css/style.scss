@@ -544,3 +544,47 @@ table th {
 .progress-steps .step.active {
   color: #2ea043;
 }
+
+/* ===== FAQ 展開收合 ===== */
+
+.faq-item {
+  background: #16162a;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+
+.faq-item:hover {
+  border-color: #4a4a7a;
+}
+
+.faq-item summary {
+  padding: 14px 18px;
+  cursor: pointer;
+  color: #e8e8e8;
+  font-weight: bold;
+  list-style: none;
+}
+
+.faq-item summary::before {
+  content: "▸ ";
+  color: #2ea043;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.faq-item[open] summary::before {
+  content: "▾ ";
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  padding: 0 18px 14px;
+  margin: 0;
+  color: #bbb;
+  line-height: 1.7;
+}
