@@ -4,23 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
+
+  <!-- SEO & OG Meta -->
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | truncatewords: 50 }}">
+  <meta name="author" content="奧蘿拉 / DeepSea Studio">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncatewords: 50 }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/banner.png' | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncatewords: 50 }}">
+  <meta name="twitter:image" content="{{ '/assets/images/banner.png' | absolute_url }}">
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 <body>
 
   <!-- 左側圖片（固定，滿版高度） -->
   <div class="side-panel side-left">
-    <img src="{{ '/assets/images/side-left-1.PNG' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/side-left-1.PNG' | relative_url }}" alt="" loading="lazy">
   </div>
 
   <!-- 右側圖片（固定，滿版高度） -->
   <div class="side-panel side-right">
-    <img src="{{ '/assets/images/side-right-1.PNG' | relative_url }}" alt="">
+    <img src="{{ '/assets/images/side-right-1.PNG' | relative_url }}" alt="" loading="lazy">
   </div>
 
   <!-- 橫幅圖片 -->
   <div class="banner-image">
     <img src="{{ '/assets/images/banner.png' | relative_url }}" alt="深海工作室 Banner">
+  </div>
+
+  <!-- 委託狀態浮動標籤 -->
+  <div class="status-banner">
+    <span class="status-dot"></span> 目前開放接單中 — 歡迎填寫委託表單！
   </div>
 
   <!-- 主內容區 -->
@@ -40,6 +61,64 @@
     </footer>
 
   </div>
+
+  <!-- 回到頂部按鈕 -->
+  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂部">↑</button>
+
+  <!-- Lightbox JS -->
+  <script>
+  (function() {
+    document.addEventListener('click', function(e) {
+      var img = e.target;
+      if (!img.matches('.gallery-grid img, .hero-gallery img, .style-preview')) return;
+
+      var overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay';
+      overlay.innerHTML = '<span class="lightbox-close">&times;</span><img src="' + img.src + '" alt="' + (img.alt || '') + '">';
+
+      document.body.appendChild(overlay);
+      requestAnimationFrame(function() { overlay.classList.add('active'); });
+
+      overlay.addEventListener('click', function() {
+        overlay.classList.remove('active');
+        setTimeout(function() { overlay.remove(); }, 250);
+      });
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        var overlay = document.querySelector('.lightbox-overlay');
+        if (overlay) {
+          overlay.classList.remove('active');
+          setTimeout(function() { overlay.remove(); }, 250);
+        }
+      }
+    });
+  })();
+
+  // 回到頂部按鈕顯示/隱藏
+  (function() {
+    var btn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', function() {
+      btn.classList.toggle('visible', window.scrollY > 400);
+    });
+  })();
+
+  // 手機版漢堡選單
+  (function() {
+    var nav = document.querySelector('nav.main-nav');
+    if (!nav) return;
+    var toggle = document.createElement('button');
+    toggle.className = 'nav-toggle';
+    toggle.setAttribute('aria-label', '選單');
+    toggle.innerHTML = '☰';
+    nav.parentNode.insertBefore(toggle, nav);
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('open');
+      toggle.innerHTML = nav.classList.contains('open') ? '✕' : '☰';
+    });
+  })();
+  </script>
 
 </body>
 </html>

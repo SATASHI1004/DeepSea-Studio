@@ -74,25 +74,25 @@ permalink: /commissions/
 
 ### 🌸 明亮可愛
 
-<img class="style-preview" src="../assets/images/繪圖/IMG_2180.PNG" alt="明亮可愛風格範例">
+<img class="style-preview" loading="lazy" src="../assets/images/繪圖/IMG_2180.PNG" alt="明亮可愛風格範例">
 
 ---
 
 ### 🌑 暗黑帥氣
 
-<img class="style-preview" src="../assets/images/繪圖/IMG_1796.PNG" alt="暗黑帥氣風格範例">
+<img class="style-preview" loading="lazy" src="../assets/images/繪圖/IMG_1796.PNG" alt="暗黑帥氣風格範例">
 
 ---
 
 ### 🍡 Q 版
 
-<img class="style-preview" src="../assets/images/繪圖/IMG_1744.PNG" alt="Q版風格範例">
+<img class="style-preview" loading="lazy" src="../assets/images/繪圖/IMG_1744.PNG" alt="Q版風格範例">
 
 ---
 
 ### 🌌 奇幻氛圍
 
-<img class="style-preview" src="../assets/images/繪圖/IMG_0951.PNG" alt="奇幻氛圍風格範例">
+<img class="style-preview" loading="lazy" src="../assets/images/繪圖/IMG_0951.PNG" alt="奇幻氛圍風格範例">
 
 ---
 
