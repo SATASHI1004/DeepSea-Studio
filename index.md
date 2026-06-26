@@ -3,15 +3,6 @@ layout: default
 title: "深海工作室 DeepSea Studio"
 ---
 
-<nav class="main-nav">
-  <a href="commissions">🎨 委託資訊</a>
-  <a href="business">💼 商業合作</a>
-  <a href="r18">🔞 R18</a>
-  <a href="gallery">🖼️ 作品集</a>
-  <a href="queue">📊 排隊看板</a>
-  <a href="faq">❓ FAQ</a>
-</nav>
-
 ## 歡迎來到 奧蘿拉 的委託頁面 🐳
 
 這裡記錄了我的作品集、委託規範與價目資訊 🐙
@@ -64,10 +55,10 @@ title: "深海工作室 DeepSea Studio"
 
 | 平台 | 連結 |
 |------|------|
-| ✉ Email | `待填入` |
-| 🐦 Twitter / X | `待填入` |
-| 🎨 Pixiv | `待填入` |
-| 📷 Instagram | `待填入` |
-| 📘 Facebook | `待填入` |
+| ✉ Email | *即將公開* |
+| 🐦 Twitter / X | *即將公開* |
+| 🎨 Pixiv | *即將公開* |
+| 📷 Instagram | *即將公開* |
+| 📘 Facebook | *即將公開* |
 
 ---

@@ -4,17 +4,6 @@ title: "❓ 常見問題 FAQ"
 permalink: /faq/
 ---
 
-<nav class="main-nav">
-  <a href="../commissions">🎨 委託資訊</a>
-  <a href="../business">💼 商業合作</a>
-  <a href="../r18">🔞 R18</a>
-  <a href="../gallery">🖼️ 作品集</a>
-  <a href="../queue">📊 排隊看板</a>
-  <a href="../faq">❓ FAQ</a>
-</nav>
-
----
-
 ## 💰 付款相關
 
 <details class="faq-item">

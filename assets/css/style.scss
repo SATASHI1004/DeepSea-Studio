@@ -15,6 +15,10 @@ a#forkme_banner {
 
 /* ===== 全站基礎 ===== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #1e1e2e;
   margin: 0;
@@ -174,6 +178,12 @@ nav.main-nav a:hover {
   color: #fff;
 }
 
+nav.main-nav a.active {
+  background: rgba(46, 160, 67, 0.2);
+  color: #4ade80;
+  border-bottom: 2px solid #2ea043;
+}
+
 /* ===== 精選圖片區 ===== */
 
 .hero-gallery {
@@ -246,6 +256,27 @@ table {
 
 table th {
   background: #16162a;
+  padding: 10px 14px;
+}
+
+table td {
+  padding: 10px 14px;
+}
+
+table tbody tr {
+  transition: background 0.15s;
+}
+
+table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(22, 22, 42, 0.5);
+}
+
+table tbody tr:nth-child(even):hover {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* ===== 狀態標籤 ===== */
@@ -591,4 +622,63 @@ table th {
   margin: 0;
   color: #bbb;
   line-height: 1.7;
+}
+
+/* ===== 委託流程步驟條 ===== */
+
+.workflow-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0 24px;
+  justify-content: center;
+}
+
+.wf-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #16162a;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 14px 12px;
+  min-width: 72px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.wf-step:hover {
+  border-color: #4a4a7a;
+  transform: translateY(-2px);
+}
+
+.wf-icon {
+  font-size: 1.5em;
+  margin-bottom: 6px;
+}
+
+.wf-label {
+  font-size: 0.75em;
+  color: #bbb;
+  text-align: center;
+}
+
+.wf-arrow {
+  color: #4a4a7a;
+  font-size: 1.2em;
+}
+
+@media (max-width: 680px) {
+  .workflow-steps {
+    gap: 4px;
+  }
+
+  .wf-step {
+    padding: 10px 8px;
+    min-width: 56px;
+  }
+
+  .wf-arrow {
+    font-size: 0.9em;
+  }
 }

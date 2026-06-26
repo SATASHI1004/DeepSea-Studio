@@ -10,16 +10,23 @@ permalink: /commissions/
 
 ## 委託流程
 
-```
-1. 📋 填寫委託表單
-2. 💬 確認需求 & 報價
-3. 💰 支付訂金（50%）
-4. 📝 草稿確認
-5. ✏️ 線稿確認
-6. 🎨 上色 & 完稿
-7. 💰 支付尾款（50%）
-8. 📦 交付成品
-```
+<div class="workflow-steps">
+  <div class="wf-step"><span class="wf-icon">📋</span><span class="wf-label">填寫表單</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">💬</span><span class="wf-label">確認報價</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">💰</span><span class="wf-label">訂金 50%</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">📝</span><span class="wf-label">草稿確認</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">✏️</span><span class="wf-label">線稿確認</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">🎨</span><span class="wf-label">上色完稿</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">💰</span><span class="wf-label">尾款 50%</span></div>
+  <div class="wf-arrow">→</div>
+  <div class="wf-step"><span class="wf-icon">📦</span><span class="wf-label">交付成品</span></div>
+</div>
 
 ---
 
