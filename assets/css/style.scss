@@ -382,6 +382,140 @@ table tbody tr:nth-child(even):hover {
   opacity: 1;
 }
 
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 10000;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  user-select: none;
+  padding: 20px;
+  line-height: 1;
+}
+
+.lightbox-nav:hover {
+  opacity: 1;
+}
+
+.lightbox-prev {
+  left: 16px;
+}
+
+.lightbox-next {
+  right: 16px;
+}
+
+/* ===== 錨點快速跳轉列 ===== */
+
+.anchor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 20px;
+}
+
+.anchor-nav a {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #16162a;
+  border: 1px solid #2a2a4a;
+  border-radius: 20px;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.88em;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.anchor-nav a:hover {
+  background: rgba(46, 160, 67, 0.15);
+  border-color: #2ea043;
+  color: #4ade80;
+}
+
+/* ===== Gallery 分類篩選 ===== */
+
+.gallery-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 24px;
+}
+
+.gallery-filter button {
+  padding: 6px 18px;
+  background: #16162a;
+  border: 1px solid #2a2a4a;
+  border-radius: 20px;
+  color: #bbb;
+  font-size: 0.88em;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.gallery-filter button:hover {
+  background: rgba(46, 160, 67, 0.15);
+  border-color: #2ea043;
+  color: #4ade80;
+}
+
+.gallery-filter button.active {
+  background: rgba(46, 160, 67, 0.2);
+  border-color: #2ea043;
+  color: #4ade80;
+}
+
+.gallery-section {
+  transition: opacity 0.3s;
+}
+
+.gallery-section.hidden {
+  display: none;
+}
+
+/* ===== 圖片骨架屏載入動畫 ===== */
+
+.skeleton-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #16162a;
+  border-radius: 8px;
+}
+
+.skeleton-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+  animation: skeleton-shimmer 1.5s infinite;
+  z-index: 1;
+}
+
+.skeleton-wrap img {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skeleton-wrap.loaded::before {
+  display: none;
+}
+
+.skeleton-wrap.loaded img {
+  opacity: 1;
+}
+
+@keyframes skeleton-shimmer {
+  to { left: 100%; }
+}
+
 /* ===== 委託狀態浮動標籤 ===== */
 
 .status-banner {

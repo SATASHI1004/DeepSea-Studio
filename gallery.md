@@ -6,7 +6,17 @@ permalink: /gallery/
 
 > 這裡展示的都是全年齡作品。R18 作品請前往 [Pixiv](#)。
 
+<div class="gallery-filter">
+  <button class="active" data-cat="all">🎯 全部</button>
+  <button data-cat="bright">🌸 明亮可愛</button>
+  <button data-cat="dark">🌑 暗黑帥氣</button>
+  <button data-cat="chibi">🍡 Q 版</button>
+  <button data-cat="fantasy">🌌 奇幻氛圍</button>
+</div>
+
 ---
+
+<div class="gallery-section" data-cat="bright">
 
 ## 🌸 明亮可愛
 
@@ -21,7 +31,11 @@ permalink: /gallery/
   <img loading="lazy" src="../assets/images/繪圖/IMG_2336.PNG" alt="長毛仙子擬人">
 </div>
 
+</div>
+
 ---
+
+<div class="gallery-section" data-cat="dark">
 
 ## 🌑 暗黑帥氣
 
@@ -32,7 +46,11 @@ permalink: /gallery/
   <img loading="lazy" src="../assets/images/繪圖/IMG_2035.PNG" alt="兔耳角色">
 </div>
 
+</div>
+
 ---
+
+<div class="gallery-section" data-cat="chibi">
 
 ## 🍡 Q 版
 
@@ -49,7 +67,11 @@ permalink: /gallery/
   <img loading="lazy" src="../assets/images/繪圖/IMG_1753.PNG" alt="金髮獸耳 Q版頭像">
 </div>
 
+</div>
+
 ---
+
+<div class="gallery-section" data-cat="fantasy">
 
 ## 🌌 奇幻氛圍
 
@@ -59,6 +81,8 @@ permalink: /gallery/
   <img loading="lazy" src="../assets/images/繪圖/IMG_1733.PNG" alt="新年和服角色">
   <img loading="lazy" src="../assets/images/繪圖/IMG_2217.PNG" alt="眼鏡角色與骷髏">
   <img loading="lazy" src="../assets/images/繪圖/IMG_2518.PNG" alt="雙人金冠構圖">
+</div>
+
 </div>
 
 ---

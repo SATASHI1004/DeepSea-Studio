@@ -29,7 +29,7 @@ permalink: /business/
 
 ## 📧 聯繫方式
 
-> ✉ Email：`待填入`
+> ✉ Email：*即將公開*
 
 ---
 

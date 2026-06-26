@@ -80,30 +80,62 @@
   <!-- Lightbox JS -->
   <script>
   (function() {
-    document.addEventListener('click', function(e) {
-      var img = e.target;
-      if (!img.matches('.gallery-grid img, .hero-gallery img, .style-preview')) return;
+    var allImages = [];
+    var currentIdx = 0;
 
+    function collectImages() {
+      allImages = Array.prototype.slice.call(
+        document.querySelectorAll('.gallery-grid img, .hero-gallery img, .style-preview')
+      );
+    }
+
+    function showLightbox(idx) {
+      var old = document.querySelector('.lightbox-overlay');
+      if (old) old.remove();
+
+      currentIdx = idx;
+      var img = allImages[idx];
       var overlay = document.createElement('div');
       overlay.className = 'lightbox-overlay';
-      overlay.innerHTML = '<span class="lightbox-close">&times;</span><img src="' + img.src + '" alt="' + (img.alt || '') + '">';
+      overlay.innerHTML =
+        '<span class="lightbox-close">&times;</span>' +
+        (allImages.length > 1 ? '<span class="lightbox-nav lightbox-prev">‹</span><span class="lightbox-nav lightbox-next">›</span>' : '') +
+        '<img src="' + img.src + '" alt="' + (img.alt || '') + '">';
 
       document.body.appendChild(overlay);
       requestAnimationFrame(function() { overlay.classList.add('active'); });
 
-      overlay.addEventListener('click', function() {
-        overlay.classList.remove('active');
-        setTimeout(function() { overlay.remove(); }, 250);
-      });
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        var overlay = document.querySelector('.lightbox-overlay');
-        if (overlay) {
+      overlay.addEventListener('click', function(ev) {
+        if (ev.target.classList.contains('lightbox-prev')) {
+          showLightbox((currentIdx - 1 + allImages.length) % allImages.length);
+        } else if (ev.target.classList.contains('lightbox-next')) {
+          showLightbox((currentIdx + 1) % allImages.length);
+        } else if (!ev.target.matches('.lightbox-overlay img')) {
           overlay.classList.remove('active');
           setTimeout(function() { overlay.remove(); }, 250);
         }
+      });
+    }
+
+    document.addEventListener('click', function(e) {
+      var img = e.target;
+      if (!img.matches('.gallery-grid img, .hero-gallery img, .style-preview')) return;
+      collectImages();
+      var idx = allImages.indexOf(img);
+      if (idx === -1) idx = 0;
+      showLightbox(idx);
+    });
+
+    document.addEventListener('keydown', function(e) {
+      var overlay = document.querySelector('.lightbox-overlay');
+      if (!overlay) return;
+      if (e.key === 'Escape') {
+        overlay.classList.remove('active');
+        setTimeout(function() { overlay.remove(); }, 250);
+      } else if (e.key === 'ArrowLeft') {
+        showLightbox((currentIdx - 1 + allImages.length) % allImages.length);
+      } else if (e.key === 'ArrowRight') {
+        showLightbox((currentIdx + 1) % allImages.length);
       }
     });
   })();
@@ -141,6 +173,49 @@
       nav.classList.toggle('open');
       toggle.innerHTML = nav.classList.contains('open') ? '✕' : '☰';
     });
+  })();
+
+  // 圖片骨架屏載入
+  (function() {
+    var imgs = document.querySelectorAll('.gallery-grid img, .hero-gallery img');
+    for (var i = 0; i < imgs.length; i++) {
+      (function(img) {
+        var wrap = document.createElement('div');
+        wrap.className = 'skeleton-wrap';
+        img.parentNode.insertBefore(wrap, img);
+        wrap.appendChild(img);
+        if (img.complete) {
+          wrap.classList.add('loaded');
+        } else {
+          img.addEventListener('load', function() { wrap.classList.add('loaded'); });
+          img.addEventListener('error', function() { wrap.classList.add('loaded'); });
+        }
+      })(imgs[i]);
+    }
+  })();
+
+  // Gallery 分類篩選
+  (function() {
+    var filterWrap = document.querySelector('.gallery-filter');
+    if (!filterWrap) return;
+    var buttons = filterWrap.querySelectorAll('button');
+    var sections = document.querySelectorAll('.gallery-section');
+    for (var i = 0; i < buttons.length; i++) {
+      (function(btn) {
+        btn.addEventListener('click', function() {
+          for (var j = 0; j < buttons.length; j++) buttons[j].classList.remove('active');
+          btn.classList.add('active');
+          var cat = btn.getAttribute('data-cat');
+          for (var k = 0; k < sections.length; k++) {
+            if (cat === 'all' || sections[k].getAttribute('data-cat') === cat) {
+              sections[k].classList.remove('hidden');
+            } else {
+              sections[k].classList.add('hidden');
+            }
+          }
+        });
+      })(buttons[i]);
+    }
   })();
   </script>
 
