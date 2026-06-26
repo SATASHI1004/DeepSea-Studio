@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>電子收據 — 深海工作室</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; color: #222; background: #f8f8f8; }
+  .receipt { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; }
+  .receipt-header { background: linear-gradient(135deg, #1e1e2e, #2a2a4a); color: #fff; padding: 32px 40px; display: flex; align-items: center; gap: 24px; }
+  .logo-placeholder { width: 72px; height: 72px; border: 2px dashed rgba(255,255,255,0.4); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: rgba(255,255,255,0.5); text-align: center; flex-shrink: 0; }
+  .header-text h1 { font-size: 22px; margin-bottom: 4px; }
+  .header-text p { font-size: 13px; color: rgba(255,255,255,0.7); }
+  .receipt-body { padding: 32px 40px; }
+  .receipt-title { text-align: center; font-size: 20px; font-weight: bold; color: #1e1e2e; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid #2ea043; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; margin-bottom: 28px; }
+  .info-item label { display: block; font-size: 12px; color: #888; margin-bottom: 4px; }
+  .info-item .value { font-size: 15px; color: #222; padding: 6px 0; border-bottom: 1px solid #eee; min-height: 28px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+  table th { background: #f0f7f1; color: #1e1e2e; padding: 10px 14px; text-align: left; font-size: 13px; border-bottom: 2px solid #2ea043; }
+  table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 14px; }
+  table td:last-child { text-align: right; }
+  table th:last-child { text-align: right; }
+  .total-row td { font-weight: bold; font-size: 16px; border-top: 2px solid #222; border-bottom: none; }
+  .total-row td:last-child { color: #2ea043; font-size: 18px; }
+  .payment-info { background: #f9fafb; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+  .payment-info h3 { font-size: 14px; color: #555; margin-bottom: 8px; }
+  .payment-info p { font-size: 13px; color: #666; line-height: 1.8; }
+  .receipt-footer { text-align: center; padding: 20px 40px 32px; border-top: 1px solid #eee; }
+  .receipt-footer p { font-size: 12px; color: #aaa; line-height: 1.6; }
+  .stamp-area { margin: 20px 0; display: flex; justify-content: flex-end; padding-right: 40px; }
+  .stamp-box { width: 120px; height: 60px; border: 1px dashed #ccc; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #bbb; }
+  .badge { display: inline-block; background: #2ea043; color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+  @media print {
+    body { background: #fff; }
+    .receipt { box-shadow: none; margin: 0; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="receipt">
+  <div class="receipt-header">
+    <div class="logo-placeholder">LOGO<br>預留區</div>
+    <div class="header-text">
+      <h1>深海工作室 DeepSea Studio</h1>
+      <p>Art Commission Service</p>
+    </div>
+  </div>
+
+  <div class="receipt-body">
+    <div class="receipt-title">電子收據 RECEIPT</div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <label>收據編號</label>
+        <div class="value">DS-2026-001</div>
+      </div>
+      <div class="info-item">
+        <label>開立日期</label>
+        <div class="value">2026 / __ / __</div>
+      </div>
+      <div class="info-item">
+        <label>委託方名稱</label>
+        <div class="value">&nbsp;</div>
+      </div>
+      <div class="info-item">
+        <label>委託編號</label>
+        <div class="value">#___</div>
+      </div>
+      <div class="info-item">
+        <label>付款類型</label>
+        <div class="value"><span class="badge">訂金 50%</span></div>
+      </div>
+      <div class="info-item">
+        <label>付款方式</label>
+        <div class="value">銀行轉帳</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>說明</th>
+          <th>金額（NT$）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>委託項目</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>加價項目</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="height: 8px; border: none;"></td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">本次應收金額</td>
+          <td>NT$ ________</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="payment-info">
+      <h3>付款資訊</h3>
+      <p>
+        收款銀行：_______________<br>
+        戶名：_______________<br>
+        帳號末五碼：_____<br>
+        轉帳日期：2026 / __ / __
+      </p>
+    </div>
+
+    <div class="stamp-area">
+      <div class="stamp-box">繪師簽章</div>
+    </div>
+  </div>
+
+  <div class="receipt-footer">
+    <p>本收據由深海工作室開立，僅作為付款證明使用。<br>如有疑問請透過委託時的聯繫管道洽詢。</p>
+  </div>
+</div>
+
+</body>
+</html>

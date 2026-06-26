@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>委託報價單 — 深海工作室</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; color: #222; background: #f8f8f8; }
+  .quote { max-width: 700px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; }
+  .quote-header { background: linear-gradient(135deg, #1e1e2e, #2a2a4a); color: #fff; padding: 32px 40px; display: flex; align-items: center; gap: 24px; }
+  .logo-placeholder { width: 72px; height: 72px; border: 2px dashed rgba(255,255,255,0.4); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: rgba(255,255,255,0.5); text-align: center; flex-shrink: 0; }
+  .header-text h1 { font-size: 22px; margin-bottom: 4px; }
+  .header-text p { font-size: 13px; color: rgba(255,255,255,0.7); }
+  .quote-body { padding: 32px 40px; }
+  .quote-title { text-align: center; font-size: 20px; font-weight: bold; color: #1e1e2e; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid #2ea043; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; margin-bottom: 28px; }
+  .info-item label { display: block; font-size: 12px; color: #888; margin-bottom: 4px; }
+  .info-item .value { font-size: 15px; color: #222; padding: 6px 0; border-bottom: 1px solid #eee; min-height: 28px; }
+  .section-title { font-size: 15px; font-weight: bold; color: #1e1e2e; margin: 24px 0 12px; padding-left: 10px; border-left: 3px solid #2ea043; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  table th { background: #f0f7f1; color: #1e1e2e; padding: 10px 14px; text-align: left; font-size: 13px; border-bottom: 2px solid #2ea043; }
+  table td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 14px; }
+  table td:last-child, table th:last-child { text-align: right; }
+  .subtotal-row td { background: #fafafa; font-weight: 600; }
+  .total-row td { font-weight: bold; font-size: 16px; border-top: 2px solid #222; border-bottom: none; }
+  .total-row td:last-child { color: #2ea043; font-size: 18px; }
+  .note-box { background: #fffbe6; border: 1px solid #f0e68c; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+  .note-box h3 { font-size: 14px; color: #8b7000; margin-bottom: 8px; }
+  .note-box ul { font-size: 13px; color: #666; line-height: 1.9; padding-left: 18px; }
+  .desc-box { background: #f9fafb; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+  .desc-box h3 { font-size: 14px; color: #555; margin-bottom: 8px; }
+  .desc-box .content { font-size: 13px; color: #666; line-height: 1.8; min-height: 60px; border-bottom: 1px dashed #ddd; }
+  .sign-area { display: flex; justify-content: space-between; margin-top: 32px; padding-top: 20px; border-top: 1px solid #eee; }
+  .sign-box { text-align: center; }
+  .sign-box .line { width: 160px; border-bottom: 1px solid #999; margin-bottom: 6px; height: 40px; }
+  .sign-box .label { font-size: 12px; color: #888; }
+  .badge { display: inline-block; background: #2ea043; color: #fff; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+  .badge.warn { background: #e8a000; }
+  .valid-note { text-align: center; margin-top: 16px; font-size: 12px; color: #aaa; }
+  .quote-footer { text-align: center; padding: 20px 40px 32px; border-top: 1px solid #eee; }
+  .quote-footer p { font-size: 12px; color: #aaa; line-height: 1.6; }
+  @media print {
+    body { background: #fff; }
+    .quote { box-shadow: none; margin: 0; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="quote">
+  <div class="quote-header">
+    <div class="logo-placeholder">LOGO<br>預留區</div>
+    <div class="header-text">
+      <h1>深海工作室 DeepSea Studio</h1>
+      <p>Art Commission Service</p>
+    </div>
+  </div>
+
+  <div class="quote-body">
+    <div class="quote-title">委託報價單 QUOTATION</div>
+
+    <div class="info-grid">
+      <div class="info-item">
+        <label>報價編號</label>
+        <div class="value">Q-2026-001</div>
+      </div>
+      <div class="info-item">
+        <label>報價日期</label>
+        <div class="value">2026 / __ / __</div>
+      </div>
+      <div class="info-item">
+        <label>委託方名稱</label>
+        <div class="value">&nbsp;</div>
+      </div>
+      <div class="info-item">
+        <label>有效期限</label>
+        <div class="value"><span class="badge warn">報價後 7 天內</span></div>
+      </div>
+    </div>
+
+    <div class="desc-box">
+      <h3>委託內容描述</h3>
+      <div class="content">
+        角色：<br>
+        類型：（半身 / 全身 / 場景 / 其他）<br>
+        備註：
+      </div>
+    </div>
+
+    <div class="section-title">報價明細</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>說明</th>
+          <th>金額（NT$）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>基本委託費</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>複雜背景</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>多角色加價</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>急件加價</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>R18 加價</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>其他</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2">總計</td>
+          <td>NT$ ________</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">付款方式</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>階段</th>
+          <th>比例</th>
+          <th>金額（NT$）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>訂金（報價確認後）</td>
+          <td>50%</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>尾款（完稿交付前）</td>
+          <td>50%</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">預估時程</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>階段</th>
+          <th>預估天數</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>草稿</td>
+          <td></td>
+          <td>提供 2 次大幅修改</td>
+        </tr>
+        <tr>
+          <td>線稿</td>
+          <td></td>
+          <td>確認後不接受大改</td>
+        </tr>
+        <tr>
+          <td>上色完稿</td>
+          <td></td>
+          <td>完稿後 1 次微調</td>
+        </tr>
+        <tr>
+          <td>預計交付</td>
+          <td colspan="2">約 _____ 天後</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <h3>注意事項</h3>
+      <ul>
+        <li>本報價自開立日起 <strong>7 天內有效</strong>，逾期需重新報價</li>
+        <li>完成品著作權歸繪師所有，委託方擁有個人非商業使用權</li>
+        <li>草稿開始前可全額退款；草稿開始後訂金不予退還</li>
+        <li>交付格式：PNG 300dpi（如需其他格式請事先說明）</li>
+        <li>商業用途需另簽授權合約，請洽商業合作頁面</li>
+      </ul>
+    </div>
+
+    <div class="sign-area">
+      <div class="sign-box">
+        <div class="line"></div>
+        <div class="label">委託方簽名 / 確認日期</div>
+      </div>
+      <div class="sign-box">
+        <div class="line"></div>
+        <div class="label">繪師簽章</div>
+      </div>
+    </div>
+
+    <div class="valid-note">確認報價後請支付 50% 訂金，繪師將於收到款項後安排排程。</div>
+  </div>
+
+  <div class="quote-footer">
+    <p>深海工作室 DeepSea Studio<br>本報價單僅供委託雙方參考，不具法律約束力。</p>
+  </div>
+</div>
+
+</body>
+</html>
