@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: #1e1e2e;
+  background: #1e1e2e url('/DeepSea-Studio/assets/images/Homepage%20Background.jpg') center top / cover no-repeat fixed;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -121,10 +121,7 @@ body {
 }
 
 .site-content {
-  background:
-    linear-gradient(rgba(30, 30, 46, 0.75), rgba(30, 30, 46, 0.75)),
-    url('/DeepSea-Studio/assets/images/Homepage%20Background.jpg') center top / cover no-repeat;
-  background-color: rgba(30, 30, 46, 0.95);
+  background: rgba(30, 30, 46, 0.75);
   padding: 20px 30px;
   border-radius: 8px;
 }
