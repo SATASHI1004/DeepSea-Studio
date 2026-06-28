@@ -66,11 +66,11 @@
 
     <footer class="site-footer">
       <div class="footer-social">
-        <a href="#" class="social-link" title="Twitter / X">🐦</a>
-        <a href="#" class="social-link" title="Pixiv">🎨</a>
-        <a href="#" class="social-link" title="Instagram">📷</a>
-        <a href="#" class="social-link" title="Facebook">📘</a>
-        <a href="mailto:" class="social-link" title="Email">✉️</a>
+        <a href="javascript:void(0)" class="social-link" title="Twitter / X（即將公開）">🐦</a>
+        <a href="javascript:void(0)" class="social-link" title="Pixiv（即將公開）">🎨</a>
+        <a href="javascript:void(0)" class="social-link" title="Instagram（即將公開）">📷</a>
+        <a href="javascript:void(0)" class="social-link" title="Facebook（即將公開）">📘</a>
+        <a href="javascript:void(0)" class="social-link" title="Email（即將公開）">✉️</a>
       </div>
       <p>© 2026 深海工作室 DeepSea Studio. All rights reserved.</p>
     </footer>
@@ -100,10 +100,27 @@
       var img = allImages[idx];
       var overlay = document.createElement('div');
       overlay.className = 'lightbox-overlay';
-      overlay.innerHTML =
-        '<span class="lightbox-close">&times;</span>' +
-        (allImages.length > 1 ? '<span class="lightbox-nav lightbox-prev">‹</span><span class="lightbox-nav lightbox-next">›</span>' : '') +
-        '<img src="' + img.src + '" alt="' + (img.alt || '') + '">';
+
+      var closeBtn = document.createElement('span');
+      closeBtn.className = 'lightbox-close';
+      closeBtn.textContent = '×';
+      overlay.appendChild(closeBtn);
+
+      if (allImages.length > 1) {
+        var prevBtn = document.createElement('span');
+        prevBtn.className = 'lightbox-nav lightbox-prev';
+        prevBtn.textContent = '‹';
+        overlay.appendChild(prevBtn);
+        var nextBtn = document.createElement('span');
+        nextBtn.className = 'lightbox-nav lightbox-next';
+        nextBtn.textContent = '›';
+        overlay.appendChild(nextBtn);
+      }
+
+      var lbImg = document.createElement('img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt || '';
+      overlay.appendChild(lbImg);
 
       document.body.appendChild(overlay);
       requestAnimationFrame(function() { overlay.classList.add('active'); });
