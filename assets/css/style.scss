@@ -630,6 +630,12 @@ table tbody tr:nth-child(even):hover {
   .site-content {
     padding: 16px;
   }
+
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 /* ===== 排隊看板 ===== */
