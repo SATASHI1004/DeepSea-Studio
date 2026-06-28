@@ -56,9 +56,9 @@ title: "深海工作室 DeepSea Studio"
 | 平台 | 連結 |
 |------|------|
 | ✉ Email | *即將公開* |
-| 🐦 Twitter / X | *即將公開* |
+| 🐦 Twitter / X | [@asyedy123](https://x.com/asyedy123/media) |
 | 🎨 Pixiv | *即將公開* |
-| 📷 Instagram | *即將公開* |
-| 📘 Facebook | *即將公開* |
+| 📷 Instagram | [@you_mu2](https://www.instagram.com/you_mu2/) |
+| 📘 Facebook | [優姆MuYou](https://www.facebook.com/profile.php?id=61590716739329) |
 
 ---
